@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>GitHub Profile Finder</h1>
+
+    <div class="search-box">
+        <input
+            type="text"
+            id="username"
+            placeholder="Enter GitHub Username..."
+        >
+
+        <button id="searchBtn">
+            Search
+        </button>
+    </div>
+
+    <!-- Profile Card -->
+
+    <section class="profile-card">
+
+        <div class="profile-header">
+
+            <img
+                id="avatar"
+                src="https://avatars.githubusercontent.com/u/583231?v=4"
+                alt="Avatar"
+            >
+
+            <div>
+
+                <h2 id="name">The Octocat</h2>
+
+                <p id="usernameText">@octocat</p>
+
+                <p id="bio">
+                    GitHub mascot and open-source enthusiast.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="stats">
+
+            <div class="stat">
+                <h3 id="followers">4500</h3>
+                <span>Followers</span>
+            </div>
+
+            <div class="stat">
+                <h3 id="following">9</h3>
+                <span>Following</span>
+            </div>
+
+            <div class="stat">
+                <h3 id="repos">86</h3>
+                <span>Repositories</span>
+            </div>
+
+        </div>
+
+        <div class="details">
+
+            <p>📍 <span id="location">San Francisco</span></p>
+
+            <p>🏢 <span id="company">GitHub</span></p>
+
+            <p>🔗
+                <a href="#" id="profileLink">
+                    github.com/octocat
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Repository Section -->
+
+    <section class="repo-section">
+
+        <h2>Repositories</h2>
+
+        <div id="repoContainer">
+
+            <div class="repo-card">
+
+                <h3>Weather App</h3>
+
+                <p>
+                    Beautiful weather application using JavaScript.
+                </p>
+
+                <div class="repo-info">
+
+                    <span>⭐ 42</span>
+
+                    <span>JavaScript</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</div>
+<script src="app.js"></script>
+
+</body>
+</html>
