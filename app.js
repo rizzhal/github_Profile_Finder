@@ -38,12 +38,12 @@ async function getData() {
         const avatar = data?.avatar_url??null
         const name = data?.name??null
         const usernameText = data?.login??null
-        const bio = data?.bio??null || "Not available"
+        const bio = data?.bio??null
         const followers = data?.followers??null
         const following = data?.following??null
         const repos = data?.public_repos??null
         const location = data?.location??null
-        const company = data?.company??null || "Not available"
+        const company = data?.company??null 
         const profileLink = data?.html_url??null
     
 
@@ -60,12 +60,11 @@ searchBtn_el.addEventListener("click" , async() => {
     avatar_el.src= result.avatar
     name_el.textContent = result.name
     userNameText_el.textContent = result.usernameText
-    bio_el.textContent = result.bio
+    bio_el.textContent = result.bio || "Not available"
     followers_el.textContent = result.followers
     following_el.textContent = result.following
     repos_el.textContent = result.repos
     location_el.textContent = result.location
-    company_el.textContent = result.company
+    company_el.textContent = result.company || "Not available"
     profileLink_el.href = result.profileLink
-    searchBtn_el
 })
